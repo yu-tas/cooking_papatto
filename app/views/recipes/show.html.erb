@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>レシピ名:</strong>
+  <%= @recipe.title %>
+</p>
+
+<p>
+  <strong>作り方:</strong>
+  <%= @recipe.content %>
+</p>
+
+<%= link_to '編集', edit_recipe_path(@recipe) %> |
+<%= link_to '一覧画面', recipes_path %>
