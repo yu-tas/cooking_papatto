@@ -1,12 +1,12 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Recipes</h1>
+<h1>レシピ一覧</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Content</th>
+      <th>レシピ名</th>
+      <th>作り方</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= recipe.title %></td>
         <td><%= recipe.content %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '詳細', recipe %></td>
+        <td><%= link_to '編集', edit_recipe_path(recipe) %></td>
+        <td><%= link_to '削除', recipe, method: :delete, data: { confirm: '本当に削除しても良いですか？' } %></td>
       </tr>
     <% end %>
   </tbody>
